@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Arpita ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <audio id="bgMusic" loop>
+        <source src="media/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicBtn" class="music-btn" onclick="toggleMusic()">
+        ♫ Play music
+    </button>
+
+    <main class="container">
+
+        <!-- PAGE 1: WELCOME -->
+        <section class="page active" id="home">
+            <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+            <div class="big-heart">♡</div>
+            <h1>Hii, Miss Cutie Pie...</h1>
+            <p class="subtitle">
+                Letss gooooo ab apki sari curosity khtm 😋
+                but itni asani se nhiiiiiii 😏
+            </p>
+            <button class="main-btn" onclick="showPage('letter')">
+                Enter my little world ✨
+            </button>
+            <p class="small-text">Made with love, only for my naughty gurl</p>
+        </section>
+
+        <!-- PAGE 2: LETTER -->
+        <section class="page" id="letter">
+            <p class="eyebrow">CHAPTER 01</p>
+            <h1>A letter for you 💌</h1>
+            <div class="letter-card">
+                <p class="letter-heading">My dear princess</p>
+                <p id="letterLine" class="letter-line">
+                    There are some things I don't say often enough...
+                </p>
+                <p id="letterCounter" class="small-text">1 / 6</p>
+                <button class="main-btn" onclick="revealLetter()">
+                    Reveal the next line
+                </button>
+            </div>
+            <button id="letterNext" class="secondary-btn hidden"
+                onclick="showPage('memories')">
+                Turn the page →
+            </button>
+        </section>
+
+        <!-- PAGE 3: PHOTO GALLERY -->
+        <section class="page" id="memories">
+            <p class="eyebrow">CHAPTER 02</p>
+            <h1>Little moments, forever memories.</h1>
+            <p class="subtitle">
+                Every picture has a story. These are some of my favourites.
+            </p>
+
+            <div class="gallery">
+                <figure><img src="images/photo1.jpg" alt="Memory 1"><figcaption>MY LITTLE BARBIE DOLL ❤️</figcaption></figure>
+                <figure><img src="images/photo2.jpg" alt="Memory 2"><figcaption>Cutie pie</figcaption></figure>
+                <figure><img src="images/photo3.jpg" alt="Memory 3"><figcaption>Yupp my dancer </figcaption></figure>
+                <figure><img src="images/photo4.jpg" alt="Memory 4"><figcaption>ye teri adayeee uffff mohtarma😋</figcaption></figure>
+                <figure><img src="images/photo5.jpg" alt="Memory 5"><figcaption>bss ab toh m gyaaaaa</figcaption></figure>
+                <figure><img src="images/photo6.jpg" alt="Memory 6"><figcaption>A little happiness😩</figcaption></figure>
+                <figure><img src="images/photo7.jpg" alt="Memory 7"><figcaption>bachpan se hi mst h tu😘</figcaption></figure>
+                <figure><img src="images/photo8.jpg" alt="Memory 8"><figcaption>Always stay happie my doll🫶🏻</figcaption></figure>
+                <figure><img src="images/photo9.jpg" alt="Memory 9"><figcaption>My favourite person</figcaption></figure>
+                <figure><img src="images/photo10.jpg" alt="Memory 10"><figcaption>Ye tere chatpate poses🤌🏻🤌🏻</figcaption></figure>
+                <figure><img src="images/photo11.jpg" alt="Memory 11"><figcaption>Precious moments</figcaption></figure>
+                <figure><img src="images/photo12.jpg" alt="Memory 12"><figcaption>Forever in my heart</figcaption></figure>
+                <figure><img src="images/photo13.jpg" alt="Memory 13"><figcaption>My happy place</figcaption></figure>
+                <figure><img src="images/photo14.jpg" alt="Memory 14"><figcaption>One more memory</figcaption></figure>
+                <figure><img src="images/photo15.jpg" alt="Memory 15"><figcaption>Ye apki cutu cutu smile💋</figcaption></figure>
+                <figure><img src="images/photo16.jpg" alt="Memory 16"><figcaption>Beautiful days</figcaption></figure>
+                <figure><img src="images/photo17.jpg" alt="Memory 17"><figcaption>chuimuiii🫣</figcaption></figure>
+                <figure><img src="images/photo18.jpg" alt="Memory 18"><figcaption>favourite view😩</figcaption></figure>
+                <figure><img src="images/photo19.jpg" alt="Memory 19"><figcaption>I m jusst missing uhh babe🥺</figcaption></figure>
+                <figure><img src="images/photo20.jpg" alt="Memory 20"><figcaption>And this is just the beginning ❤️</figcaption></figure>
+            </div>
+
+            <button class="main-btn" onclick="showPage('timeline')">
+                Our story so far →
+            </button>
+        </section>
+
+        <!-- PAGE 4: TIMELINE -->
+        <section class="page" id="timeline">
+            <p class="eyebrow">CHAPTER 03</p>
+            <h1>Our little story</h1>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span>THE BEGINNING</span>
+                    <h3>When it all started</h3>
+                    <p>10/11/2025 The special day having two ocassions.</p>
+                </div>
+                <div class="timeline-item">
+                    <span>A SPECIAL MOMENT</span>
+                    <h3>30/01/2026 and 7/02/2026</h3>
+                    <p>The day we became each other's forever </p>
+                </div>
+                <div class="timeline-item">
+                    <span>TODAY</span>
+                    <h3>Still choosing you</h3>
+                    <p>And looking forward to choose you everyday</p>
+                </div>
+            </div>
+            <button class="main-btn" onclick="showPage('secrets')">
+                I have secrets for you 🤫
+            </button>
+        </section>
+
+        <!-- PAGE 5: SECRET MESSAGES -->
+        <section class="page" id="secrets">
+            <p class="eyebrow">CHAPTER 04</p>
+            <h1>Little secrets for you</h1>
+            <p class="subtitle">Tap each envelope. One at a time. 💌</p>
+
+            <div class="secret-grid">
+                <button class="secret" onclick="openSecret(0)">💌<span>Open me</span></button>
+                <button class="secret" onclick="openSecret(1)">💌<span>Open me</span></button>
+                <button class="secret" onclick="openSecret(2)">💌<span>Open me</span></button>
+                <button class="secret" onclick="openSecret(3)">💌<span>Open me</span></button>
+            </div>
+
+            <div id="secretMessage" class="secret-message">
+                It's a secrete babe.
+            </div>
+
+            <button class="main-btn" onclick="showPage('reasons')">
+                One more thing...
+            </button>
+        </section>
+
+        <!-- PAGE 6: REASONS -->
+        <section class="page" id="reasons">
+            <p class="eyebrow">CHAPTER 05</p>
+            <h1>Reasons why you're special</h1>
+            <p class="subtitle">A few reasons, out of countless ones.</p>
+
+            <div class="reason-card">
+                <p id="reasonText">Press the button. ❤️</p>
+                <p id="reasonCount" class="small-text">0 / 8</p>
+                <button class="main-btn" onclick="nextReason()">
+                    Tell me another reason
+                </button>
+            </div>
+
+            <button id="reasonNext" class="secondary-btn hidden"
+                onclick="showPage('cake')">
+                Make a birthday wish 🎂
+            </button>
+        </section>
+
+        <!-- PAGE 7: CAKE -->
+        <section class="page" id="cake">
+            <p class="eyebrow">CHAPTER 06</p>
+            <h1>Happy Birthday, Arpita! 🎂</h1>
+            <p class="subtitle">Close your eyes, make a wish and tap below.</p>
+
+            <div class="cake">
+                <div class="candle">
+                    <div class="flame" id="flame"></div>
+                </div>
+                <div class="cake-top"></div>
+                <div class="cake-bottom"></div>
+            </div>
+
+            <button class="main-btn" onclick="blowCandles()">
+                Make your wish ✨
+            </button>
+
+            <p id="cakeMessage" class="subtitle"></p>
+
+            <button id="cakeNext" class="secondary-btn hidden"
+                onclick="showPage('final')">
+                There's one final surprise →
+            </button>
+        </section>
+
+        <!-- PAGE 8: FINAL VIDEO -->
+        <section class="page" id="final">
+            <p class="eyebrow">THE LAST CHAPTER</p>
+            <h1>For you, my Miss Cutie Pie ❤️</h1>
+            <p class="subtitle">
+                Words aren't enough. So I made something for you.
+            </p>
+
+            <button id="videoRevealBtn" class="main-btn"
+                onclick="revealVideo()">
+                Open your final surprise 🎁
+            </button>
+
+            <div id="videoContainer" class="video-container hidden">
+                <video class="video-preview" controls autoplay loop muted playsinline>
+    <source src="assets/videos/video.mp4" type="video/mp4">
+    <source src="assets/videos/video.ogg" type="video/ogg">
+    Your browser does not support this video.
+</video>
+
+                <p>Happy Birthday, Arpita. I love you. ❤️</p>
+            </div>
+
+            <p class="small-text">Forever has a beautiful beginning.</p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
